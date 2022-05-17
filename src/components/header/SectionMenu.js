@@ -5,7 +5,7 @@ const SectionMenu = (props) => {
 
   return (
     <section
-      className={`z-50 absolute left-32 w-48 bg-black text-white mt-24 flex flex-col ${
+      className={`absolute left-32 w-48 bg-black text-white mt-24 flex flex-col ${
         props.result ? "block" : "hidden"
       }`}
     >
