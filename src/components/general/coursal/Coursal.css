@@ -1,0 +1,5 @@
+.mimage {
+  background-image: url("./Coursal.png");
+  background-size: cover;
+  z-index: 1;
+}

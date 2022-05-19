@@ -15,22 +15,7 @@ export const Mapdoc = () => {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    // <Map
-    //   google={this.props.google}
-    //   zoom={14}
-    //   initialCenter={{
-    //     lat: 30.622218,
-    //     lng: 32.266384,
-    //   }}
-    // >
-    //   <Marker onClick={this.onMarkerClick} name={"Current location"} />
-
-    //   <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
-    // </Map>
   );
 };
 
 export default Mapdoc;
-// export default GoogleApiWrapper({
-//   apiKey: "AIzaSyD14j5PX38mzxx311N6GEMcU9gpSjFARyI",
-// })(Mapdoc);
