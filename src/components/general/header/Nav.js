@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import SectionMenu from "./SectionMenu";
 const Nav = (props) => {
   const [res, setres] = useState(false);
@@ -19,9 +20,9 @@ const Nav = (props) => {
           onClick={togleHandler}
         />
       </button>
-      <div>
+      <Link to="/">
         <img src="../img/logo.svg" className="w-20 h-6" alt="" />
-      </div>
+      </Link>
       <SectionMenu result={res} />
     </nav>
   );

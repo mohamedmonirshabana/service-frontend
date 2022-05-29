@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { Link } from "react-router-dom";
 import MenuD from "./MenuD";
 const SectionMenu = (props) => {
   //   const [hddata, setHddata] = useState(props.result);
@@ -10,8 +11,12 @@ const SectionMenu = (props) => {
       }`}
     >
       <div className="z-50 border-b-2 border-white flex justify-between pb-3 ">
-        <button className="ml-2">Login</button>
-        <button className="mr-2">Register</button>
+        <Link to="/auth/signin" className="ml-2">
+          Login
+        </Link>
+        <Link to="/auth/signup" className="mr-2">
+          Register
+        </Link>
       </div>
       <MenuD />
     </section>
