@@ -6,7 +6,7 @@ const ServiceProviderBoard = (props) => {
   const [serviceproviderdata, setServiceProviderData] = useState([]);
   const params = useParams();
   const { serviceid } = params;
-  console.log(params);
+  // console.log(params);
   return (
     <div>
       <UserDashBoarduser>

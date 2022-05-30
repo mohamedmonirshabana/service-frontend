@@ -1,9 +1,11 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuD from "./MenuD";
+import Log from "./Log";
+import NotLog from "./NotLog";
 const SectionMenu = (props) => {
   //   const [hddata, setHddata] = useState(props.result);
-
+  const token = localStorage.getItem("token");
   return (
     <section
       className={` absolute left-32 w-48 bg-black text-white mt-24 flex z-999 flex-col ${
@@ -11,12 +13,7 @@ const SectionMenu = (props) => {
       }`}
     >
       <div className="z-999 border-b-2 border-white flex justify-between pb-3 ">
-        <Link to="/auth/signin" className="ml-2">
-          Login
-        </Link>
-        <Link to="/auth/signup" className="mr-2">
-          Register
-        </Link>
+        {token === "" ? <Log /> : <NotLog />}
       </div>
       <MenuD />
     </section>

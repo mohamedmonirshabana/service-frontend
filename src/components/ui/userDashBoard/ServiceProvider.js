@@ -20,8 +20,8 @@ const ServiceProvider = (props) => {
       })
       .then((data) => {
         setProviderData(data);
-        console.log("send Data");
-        console.log(providerdata);
+        // console.log("send Data");
+        // console.log(providerdata);
       });
   }, []);
   return (
@@ -32,6 +32,7 @@ const ServiceProvider = (props) => {
           image={da.user_id.profilepics}
           providername={da.user_id.username}
           providerprice={da.serviceprice}
+          servicerproviderid={da.user_id._id}
         />
       ))}
     </div>
