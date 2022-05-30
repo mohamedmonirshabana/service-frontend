@@ -6,11 +6,11 @@ const SectionMenu = (props) => {
 
   return (
     <section
-      className={` absolute left-32 w-48 bg-black text-white mt-24 flex flex-col ${
+      className={` absolute left-32 w-48 bg-black text-white mt-24 flex z-999 flex-col ${
         props.result ? "block" : "hidden"
       }`}
     >
-      <div className="z-50 border-b-2 border-white flex justify-between pb-3 ">
+      <div className="z-999 border-b-2 border-white flex justify-between pb-3 ">
         <Link to="/auth/signin" className="ml-2">
           Login
         </Link>

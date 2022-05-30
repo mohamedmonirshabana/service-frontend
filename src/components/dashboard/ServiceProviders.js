@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 const ServiceProviders = (props) => {
+  // const Data = props.myData;
+  console.log("my Data");
+  // console.log(props.datacol);
+  const myimg = props.image;
   return (
     <div className="col-span-10 bg-white pt-3 px-5">
       <div className="flex">
@@ -7,17 +11,17 @@ const ServiceProviders = (props) => {
           <div className="flex flex-row justify-between">
             <div className="flex">
               <img
-                alt=""
+                src={props.image}
+                alt={props.providername}
                 className="w-10 h-10 rounded-full"
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687"
               />
               <h2 className="my-auto ml-1 font-bold">{props.providername}</h2>
             </div>
-            <div className="my-auto">price: 230</div>
+            <div className="my-auto">price: {props.providerprice}</div>
           </div>
           <div className="flex flex-row justify-between mt-5">
             <div className="flex">
-              <img alt="" src="./image/star.svg" className="w-4 h-4 mx-2" />
+              <img alt="" src="image/star.svg" className="w-4 h-4 mx-2" />
               <img alt="" src="./image/star.svg" className="w-4 h-4 mx-2" />
               <img alt="" src="./image/star.svg" className="w-4 h-4 mx-2" />
               <img alt="" src="./image/star.svg" className="w-4 h-4 mx-2" />

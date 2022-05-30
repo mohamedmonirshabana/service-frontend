@@ -11,7 +11,7 @@ const Nav = (props) => {
     }
   };
   return (
-    <nav className=" z-50 bg-black text-white h-16 w-100 mx-0 text-center flex flex-row justify-between items-center px-36 drop-shadow">
+    <nav className=" z-999 bg-black text-white h-16 w-100 mx-0 text-center flex flex-row justify-between items-center px-36 drop-shadow fixed w-full">
       <button>
         <img
           src="../img/menu-item-01.svg"

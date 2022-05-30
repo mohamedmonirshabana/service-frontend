@@ -8,6 +8,7 @@ import Signin from "./pages/account/SignIn";
 import Signup from "./pages/account/Signup";
 import Homepage from "./pages/home/Homepage";
 import UserDashBoard from "./pages/userDashBoard/DashBoard";
+import ServiceProviderBoard from "./pages/userDashBoard/ServiceProviderBoard";
 // import './App.css';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         <Route path="/auth/signin" element={<Signin />} />
         <Route path="/auth/signup" element={<Signup />} />
         <Route path="/userdashboard/" element={<UserDashBoard />} />
+        <Route
+          path="/userdashboard/service/:serviceid"
+          element={<ServiceProviderBoard />}
+        />
         {/* <Route path="/auth/signup" element={<SignUpForm />} /> */}
       </Routes>
     </div>

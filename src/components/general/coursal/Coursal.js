@@ -2,14 +2,14 @@ const Coursal = () => {
   // const zIndex = ZIndex.setVar("Modal", 100);
   return (
     <section
-      className=" w-full flex"
+      className=" w-full flex z-50"
       style={{ position: "relative", zIndex: 10 }}
     >
       <div className=" relative  ">
         <img
           src="./img/Coursal.png"
           alt=""
-          className=" mx-auto w-4/5  "
+          className=" mx-auto w-4/5 z-50 relative "
           style={{ zIndex: 10, position: "relative" }}
         />
       </div>

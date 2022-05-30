@@ -5,6 +5,10 @@ module.exports = {
       spacing: {
         42: "811px",
       },
+      zIndex: {
+        100: "100",
+        999: "999",
+      },
       colors: {
         facebook: "#385C8E",
         twitter: "#5894FB",
