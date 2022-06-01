@@ -9,6 +9,8 @@ import Signup from "./pages/account/Signup";
 import Homepage from "./pages/home/Homepage";
 import UserDashBoard from "./pages/userDashBoard/DashBoard";
 import ServiceProviderBoard from "./pages/userDashBoard/ServiceProviderBoard";
+import Requestprovider from "./pages/userDashBoard/Requestprovider";
+import ServiceforCategory from "./pages/userDashBoard/ServiceforCategory";
 // import './App.css';
 
 function App() {
@@ -23,15 +25,16 @@ function App() {
           path="/userdashboard/service/:serviceid"
           element={<ServiceProviderBoard />}
         />
-        {/* <Route path="/auth/signup" element={<SignUpForm />} /> */}
+        <Route
+          path="/userdashboard/beprovider/"
+          element={<Requestprovider />}
+        />
+        <Route
+          path="/userdashboard/beprovider/service/:categoryid"
+          element={<ServiceforCategory />}
+        />
       </Routes>
     </div>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/auth/login" element={<Account />} />
-    //   </Routes>
-    // </BrowserRouter>
   );
 }
 

@@ -15,6 +15,12 @@ const SideMenu = (props) => {
             <li className="p-3 hover:bg-white">
               <Link to="#">Order History</Link>
             </li>
+            <li className="p-3 hover:bg-white">
+              <Link to="#">Order process</Link>
+            </li>
+            <li className="p-3 hover:bg-white">
+              <Link to="/userdashboard/beprovider/">Join to provider</Link>
+            </li>
           </ul>
         </div>
       </div>
