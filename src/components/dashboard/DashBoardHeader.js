@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const DashBoardHeader = (props) => {
+  let navigate = useNavigate();
+  function logout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("uid");
+    navigate("/", { replace: true });
+  }
   return (
     <header>
       <nav className=" w-full h-16 bg-slate-600 flex flex-row justify-between text-white p-5 shadow-lg fixed z-100">
@@ -13,7 +19,7 @@ const DashBoardHeader = (props) => {
           <Link to="#">{props.username}</Link>
         </div>
         <div>
-          <Link to="#">Log out</Link>
+          <button onClick={logout}>Log out</button>
         </div>
       </nav>
     </header>

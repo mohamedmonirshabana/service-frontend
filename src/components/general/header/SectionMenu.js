@@ -6,6 +6,8 @@ import NotLog from "./NotLog";
 const SectionMenu = (props) => {
   //   const [hddata, setHddata] = useState(props.result);
   const token = localStorage.getItem("token");
+  console.log("header");
+  console.log(token);
   return (
     <section
       className={` absolute left-32 w-48 bg-black text-white mt-24 flex z-999 flex-col ${
@@ -13,9 +15,9 @@ const SectionMenu = (props) => {
       }`}
     >
       <div className="z-999 border-b-2 border-white flex justify-between pb-3 ">
-        {token === "" ? <Log /> : <NotLog />}
+        {token === null ? <Log /> : <NotLog />}
       </div>
-      <MenuD />
+      {/* <MenuD /> */}
     </section>
   );
 };

@@ -7,10 +7,13 @@ const SideMenu = (props) => {
         <div className="flex flex-col text-sm">
           <ul>
             <li className="p-3 hover:bg-white">
-              <Link to="#">My Account</Link>
+              <Link to="/userdashboard/">DashBoard</Link>
             </li>
             <li className="p-3 hover:bg-white">
-              <Link to="#">Change Password</Link>
+              <Link to="/account/">My Account</Link>
+            </li>
+            <li className="p-3 hover:bg-white">
+              <Link to="/account/changepassword">Change Password</Link>
             </li>
             <li className="p-3 hover:bg-white">
               <Link to="#">Order History</Link>

@@ -2,13 +2,18 @@ import { Link } from "react-router-dom";
 
 const Log = () => {
   return (
-    <div>
-      <Link to="/auth/signin" className="ml-2">
-        Login
-      </Link>
-      <Link to="/auth/signup" className="mr-2">
-        Register
-      </Link>
+    <div className="flex flex-row justify-between">
+      <div>
+        <Link to="/auth/signin" className="mx-3">
+          Login
+        </Link>
+      </div>
+      |
+      <div>
+        <Link to="/auth/signup" className="mx-3">
+          Register
+        </Link>
+      </div>
     </div>
   );
 };

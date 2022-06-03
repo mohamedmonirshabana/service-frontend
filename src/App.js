@@ -1,6 +1,6 @@
 // import Home from "./components/Home/Home";
 // import Account from "./components/auth/Account";
-import { Route, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 // import RequestTest from "./components/RequestTest/RequestTest";
 // import SignInForm from "./components/auth/SignInForm";
 // import SignUpForm from "./components/auth/SignUpForm";
@@ -11,6 +11,8 @@ import UserDashBoard from "./pages/userDashBoard/DashBoard";
 import ServiceProviderBoard from "./pages/userDashBoard/ServiceProviderBoard";
 import Requestprovider from "./pages/userDashBoard/Requestprovider";
 import ServiceforCategory from "./pages/userDashBoard/ServiceforCategory";
+import AccountData from "./pages/account/AccountData";
+import ChangePassword from "./pages/account/ChangePassword";
 // import './App.css';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
           path="/userdashboard/beprovider/service/:categoryid"
           element={<ServiceforCategory />}
         />
+        <Route path="/account/" element={<AccountData />} />
+        <Route path="/account/changepassword" element={<ChangePassword />} />
       </Routes>
     </div>
   );

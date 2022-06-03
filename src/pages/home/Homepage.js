@@ -5,6 +5,7 @@ import Vision from "../../components/general/Vision/Vision";
 import HomeService from "../../components/general/HomeService/HomeService";
 import Mapdoc from "../../components/general/GoogleMap/Mapdoc";
 import Footer from "../../components/general/footer/footer";
+import HomePage from "../../components/ui/home/Homepage";
 const Homepage = () => {
   return (
     <div>

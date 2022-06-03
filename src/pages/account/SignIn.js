@@ -5,7 +5,9 @@ const Signin = () => {
   return (
     <div>
       <Header />
+
       <Account />
+
       <Footer />
     </div>
   );
