@@ -19,7 +19,7 @@ const SideMenu = (props) => {
               <Link to="/userdashboard/history/">Order History</Link>
             </li>
             <li className="p-3 hover:bg-white">
-              <Link to="#">Order process</Link>
+              <Link to="/userdashboard/process/">Order process</Link>
             </li>
             <li className="p-3 hover:bg-white">
               <Link to="/userdashboard/beprovider/">Join to provider</Link>

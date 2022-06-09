@@ -17,6 +17,7 @@ import ProviderDashBoard from "./pages/providerDashBoard/ProviderDashBoard";
 import ClientInfo from "./pages/providerDashBoard/ClientInfo";
 import ProviderCasePage from "./pages/providerDashBoard/ProivderCasePage";
 import HistoryOrder from "./pages/userDashBoard/HistoryOrder";
+import UserProcess from "./pages/userDashBoard/UserProcess";
 // import './App.css';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           element={<ServiceforCategory />}
         />
         <Route path="/userdashboard/history/" element={<HistoryOrder />} />
+        <Route path="/userdashboard/process/" element={<UserProcess />} />
         <Route path="/account/" element={<AccountData />} />
         <Route path="/account/changepassword" element={<ChangePassword />} />
 
