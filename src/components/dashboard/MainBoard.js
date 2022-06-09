@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { propTypes } from "react-z-index";
 import Categories from "./Categories";
 
 const MainBoard = () => {

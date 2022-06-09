@@ -13,6 +13,10 @@ import Requestprovider from "./pages/userDashBoard/Requestprovider";
 import ServiceforCategory from "./pages/userDashBoard/ServiceforCategory";
 import AccountData from "./pages/account/AccountData";
 import ChangePassword from "./pages/account/ChangePassword";
+import ProviderDashBoard from "./pages/providerDashBoard/ProviderDashBoard";
+import ClientInfo from "./pages/providerDashBoard/ClientInfo";
+import ProviderCasePage from "./pages/providerDashBoard/ProivderCasePage";
+import HistoryOrder from "./pages/userDashBoard/HistoryOrder";
 // import './App.css';
 
 function App() {
@@ -35,8 +39,16 @@ function App() {
           path="/userdashboard/beprovider/service/:categoryid"
           element={<ServiceforCategory />}
         />
+        <Route path="/userdashboard/history/" element={<HistoryOrder />} />
         <Route path="/account/" element={<AccountData />} />
         <Route path="/account/changepassword" element={<ChangePassword />} />
+
+        <Route path="/providerdashboard" element={<ProviderDashBoard />} />
+        <Route
+          path="/providerdashboard/client/:reqid"
+          element={<ClientInfo />}
+        />
+        <Route path="/providerdashboard/case" element={<ProviderCasePage />} />
       </Routes>
     </div>
   );

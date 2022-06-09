@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "62954604e8c7009a6d3af767",
+    "serviceProvider_Id": "627e987b9a7c4f84134c6d5c",
+    "user_Id": {
+      "location": {
+        "type": "Point",
+        "coordinates": [0, 0]
+      },
+      "_id": "6290edd1fb856514f66f84dc",
+      "username": "Mego",
+      "password": "$2b$10$UnT86HgRqmaxVQKr3TPywey/KZpVxzURzrrXmir1nIcNlALpzUgQi",
+      "email": "mego@google.com",
+      "role": ["user"],
+      "phone": "01002365221",
+      "profilepics": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687",
+      "createdAt": "2022-05-27T15:27:13.776Z",
+      "updatedAt": "2022-06-02T14:08:51.824Z",
+      "__v": 0
+    },
+    "request_status": false,
+    "createdAt": "2022-05-30T22:32:36.428Z",
+    "updatedAt": "2022-05-30T22:32:36.428Z",
+    "__v": 0
+  }
+]

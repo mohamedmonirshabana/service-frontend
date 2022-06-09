@@ -5,7 +5,9 @@ const ServiceProviders = (props) => {
   // const Data = props.myData;
   // console.log("my Data");
   // console.log(props.servicerproviderid);
-  const providerid = props.servicerproviderid;
+  const serviceproviderid = props.servicerproviderid;
+  const providerid = props.providerid;
+
   const userid = localStorage.getItem("uid");
   const token = localStorage.getItem("token");
   function sendserviceReuest(event) {
@@ -15,8 +17,9 @@ const ServiceProviders = (props) => {
     //   "user_Id": "string"
     // }
     const sendData = {
-      service_provider_Id: providerid,
+      service_provider_Id: serviceproviderid,
       user_Id: userid,
+      provider_Id: providerid,
     };
 
     fetch("http://localhost:8000/api/requestservice", {

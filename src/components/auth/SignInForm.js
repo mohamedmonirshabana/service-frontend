@@ -26,9 +26,12 @@ const SignInForm = () => {
       .then((data) => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("uid", data.id);
+        localStorage.setItem("r", data.role);
         if (data.role === "user") {
           // console.log("Done user");
           navigate("/userdashboard/", { replace: true });
+        } else if (data.role === "PROVIDER") {
+          navigate("/providerdashboard", { replace: true });
         }
       });
     // return <Navigate to="/userdashboard/" replace={true} />;
