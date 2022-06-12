@@ -32,6 +32,8 @@ const SignInForm = () => {
           navigate("/userdashboard/", { replace: true });
         } else if (data.role === "PROVIDER") {
           navigate("/providerdashboard", { replace: true });
+        } else if (data.role === "ADMIN") {
+          navigate("/admindashboard/", { replace: true });
         }
       });
     // return <Navigate to="/userdashboard/" replace={true} />;

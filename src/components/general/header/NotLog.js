@@ -6,6 +6,8 @@ const NotLog = () => {
     urt = "/userdashboard/";
   } else if (role === "PROVIDER") {
     urt = "/providerdashboard/";
+  } else if (role === "ADMIN") {
+    urt = "/admindashboard/";
   }
   return (
     <div className="w-full">

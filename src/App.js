@@ -18,6 +18,15 @@ import ClientInfo from "./pages/providerDashBoard/ClientInfo";
 import ProviderCasePage from "./pages/providerDashBoard/ProivderCasePage";
 import HistoryOrder from "./pages/userDashBoard/HistoryOrder";
 import UserProcess from "./pages/userDashBoard/UserProcess";
+import MainAdminDashBoard from "./pages/AdminBoard/MainAdminDashBoard";
+import ProviderRequestPage from "./pages/AdminBoard/ProviderRequestPage";
+import AppData from "./pages/AdminBoard/AppData";
+import TaxUpadte from "./pages/AdminBoard/TaxUpdate";
+import AllUsers from "./pages/AdminBoard/AllUsers";
+import Allprov from "./pages/AdminBoard/Allprov";
+import AdminCategory from "./pages/AdminBoard/AdminCategory";
+import CreateCategoryData from "./pages/AdminBoard/CreateCategoryData";
+import Services from "./pages/AdminBoard/Services";
 // import './App.css';
 
 function App() {
@@ -51,6 +60,22 @@ function App() {
           element={<ClientInfo />}
         />
         <Route path="/providerdashboard/case" element={<ProviderCasePage />} />
+
+        <Route path="/admindashboard/" element={<MainAdminDashBoard />} />
+        <Route
+          path="/admindashboard/providerrequest"
+          element={<ProviderRequestPage />}
+        />
+        <Route path="/admindashboard/appinfo" element={<AppData />} />
+        <Route path="/admindashboard/taxupdate/" element={<TaxUpadte />} />
+        <Route path="/admindashboard/alluseres/" element={<AllUsers />} />
+        <Route path="/admindashboard/allprovider/" element={<Allprov />} />
+        <Route path="/admindashboard/categories/" element={<AdminCategory />} />
+        <Route
+          path="/admindashboard/createcategory/"
+          element={<CreateCategoryData />}
+        />
+        <Route path="/admindashboard/serviceData/" element={<Services />} />
       </Routes>
     </div>
   );
