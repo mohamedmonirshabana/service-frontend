@@ -27,6 +27,9 @@ import Allprov from "./pages/AdminBoard/Allprov";
 import AdminCategory from "./pages/AdminBoard/AdminCategory";
 import CreateCategoryData from "./pages/AdminBoard/CreateCategoryData";
 import Services from "./pages/AdminBoard/Services";
+import EditCategories from "./pages/AdminBoard/EditCategories";
+import AdminCreateService from "./pages/AdminBoard/AdminCreateService";
+import EditService from "./pages/AdminBoard/EditService";
 // import './App.css';
 
 function App() {
@@ -75,7 +78,19 @@ function App() {
           path="/admindashboard/createcategory/"
           element={<CreateCategoryData />}
         />
+        <Route
+          path="/admindashboard/catedit/:catid"
+          element={<EditCategories />}
+        />
         <Route path="/admindashboard/serviceData/" element={<Services />} />
+        <Route
+          path="/admindashboard/createservice/"
+          element={<AdminCreateService />}
+        />
+        <Route
+          path="/admindashboard/service/edit/:servid"
+          element={<EditService />}
+        />
       </Routes>
     </div>
   );

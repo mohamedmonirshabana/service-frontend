@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ServiceCard from "../dashboard/ServiceCard";
+import ServiceCard from "./ServiceCard";
 const ServicesforCat = (props) => {
   const [allservice, setAllService] = useState([]);
   useEffect(() => {
@@ -18,7 +18,7 @@ const ServicesforCat = (props) => {
       <div className=" text-xl font-bold my-4 p-3 bg-gray-50">
         {props.categoryName}
       </div>
-      <div className="flex justify-around">
+      <div className="flex flex-col">
         {allservice.map((data) => (
           <ServiceCard
             key={data._id}
