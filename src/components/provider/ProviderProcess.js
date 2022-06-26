@@ -37,7 +37,7 @@ const ProviderProcess = () => {
         <div className="font-bold text-xl text-center my-2">{username}</div>
         <div className="underline text-center my-2">{userphone}</div>
         <div className="w-full my-2">
-          <RequestMap cor1="30.605073" cor2="32.309247" />
+          <RequestMap cor1={locLng} cor2={locLate} />
         </div>
         <ButOper serid={proid} />
       </div>

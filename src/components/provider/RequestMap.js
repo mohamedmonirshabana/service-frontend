@@ -8,8 +8,8 @@ const RequestMap = (props) => {
   };
 
   const center = {
-    lat: 30.605073,
-    lng: 32.309247,
+    lat: props.cor2,
+    lng: props.cor1,
   };
   console.log(center);
   const { isLoaded } = useJsApiLoader({
